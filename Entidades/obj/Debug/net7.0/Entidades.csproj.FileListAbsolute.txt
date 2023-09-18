@@ -1,0 +1,11 @@
+C:\Users\Usuario\Desktop\Facultad\Programación_II\Proyectos\Entidades\bin\Debug\net7.0\Entidades.deps.json
+C:\Users\Usuario\Desktop\Facultad\Programación_II\Proyectos\Entidades\bin\Debug\net7.0\Entidades.dll
+C:\Users\Usuario\Desktop\Facultad\Programación_II\Proyectos\Entidades\bin\Debug\net7.0\Entidades.pdb
+C:\Users\Usuario\Desktop\Facultad\Programación_II\Proyectos\Entidades\obj\Debug\net7.0\Entidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\Facultad\Programación_II\Proyectos\Entidades\obj\Debug\net7.0\Entidades.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\Facultad\Programación_II\Proyectos\Entidades\obj\Debug\net7.0\Entidades.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\Facultad\Programación_II\Proyectos\Entidades\obj\Debug\net7.0\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Facultad\Programación_II\Proyectos\Entidades\obj\Debug\net7.0\Entidades.dll
+C:\Users\Usuario\Desktop\Facultad\Programación_II\Proyectos\Entidades\obj\Debug\net7.0\refint\Entidades.dll
+C:\Users\Usuario\Desktop\Facultad\Programación_II\Proyectos\Entidades\obj\Debug\net7.0\Entidades.pdb
+C:\Users\Usuario\Desktop\Facultad\Programación_II\Proyectos\Entidades\obj\Debug\net7.0\ref\Entidades.dll
