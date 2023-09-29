@@ -1,11 +1,11 @@
 ﻿using System.Xml;
 
-public enum ESistema { Decimal, Binario };
 
 namespace Entidades
 {
     public class Numeracion
     {
+        public enum ESistema { Decimal, Binario };
         private ESistema sistema;
 
         private double valorNumerico;
@@ -128,7 +128,6 @@ namespace Entidades
         /// <returns></returns>
         private static string DecimalABinario(string valor)
         {
-            //int.TryParse(valor, out int valorParseado);
             double valorParseado = double.Parse(valor);
             int valorParseadoRedondeado = (int)Math.Round(valorParseado);
             if (valorParseadoRedondeado < 0)
@@ -144,8 +143,8 @@ namespace Entidades
         /// <returns></returns>
         private static double BinarioADecimal(string valor)
         {
-            double.TryParse(valor, out double valorP);
-            return valorP;
+            int resultado = Convert.ToInt32(valor, 2);
+            return resultado;
         }
         /// <summary>
         /// Método encargado de Convertir un valor en un sistema númerico decimal o binario.
@@ -156,7 +155,15 @@ namespace Entidades
         {
             if (sistema == ESistema.Decimal)
             {
-                return $"{BinarioADecimal(this.Valor)}";
+                if (EsBinario(this.Valor))
+                {
+                    return Convert.ToString(BinarioADecimal(this.Valor));
+                }
+
+                else
+                {
+                    return this.Valor;
+                }
             }
             else
             {

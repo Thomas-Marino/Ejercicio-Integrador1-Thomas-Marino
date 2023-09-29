@@ -61,7 +61,7 @@ namespace Entidades
                     resultado = this.primerOperando + this.segundoOperando;
                     break;
             }
-            Numeracion retorno = new Numeracion(resultado, ESistema.Decimal);
+            Numeracion retorno = new Numeracion(resultado, Numeracion.ESistema.Decimal);
             return retorno;
         }
 

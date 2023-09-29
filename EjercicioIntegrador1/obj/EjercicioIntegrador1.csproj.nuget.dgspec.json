@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Desktop\\Facultad\\Programación_II\\Proyectos\\EjercicioIntegrador1\\EjercicioIntegrador1.csproj": {}
+    "C:\\Users\\Usuario\\Desktop\\Ejercicio-Integrador1-Thomas-Marino\\EjercicioIntegrador1\\EjercicioIntegrador1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Desktop\\Facultad\\Programación_II\\Proyectos\\EjercicioIntegrador1\\EjercicioIntegrador1.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\Ejercicio-Integrador1-Thomas-Marino\\EjercicioIntegrador1\\EjercicioIntegrador1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Facultad\\Programación_II\\Proyectos\\EjercicioIntegrador1\\EjercicioIntegrador1.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Ejercicio-Integrador1-Thomas-Marino\\EjercicioIntegrador1\\EjercicioIntegrador1.csproj",
         "projectName": "EjercicioIntegrador1",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\Facultad\\Programación_II\\Proyectos\\EjercicioIntegrador1\\EjercicioIntegrador1.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\Ejercicio-Integrador1-Thomas-Marino\\EjercicioIntegrador1\\EjercicioIntegrador1.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\Facultad\\Programación_II\\Proyectos\\EjercicioIntegrador1\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\Ejercicio-Integrador1-Thomas-Marino\\EjercicioIntegrador1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net7.0-windows7.0": {
             "targetAlias": "net7.0-windows",
             "projectReferences": {
-              "C:\\Users\\Usuario\\Desktop\\Facultad\\Programación_II\\Proyectos\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\Usuario\\Desktop\\Facultad\\Programación_II\\Proyectos\\Entidades\\Entidades.csproj"
+              "C:\\Users\\Usuario\\Desktop\\Ejercicio-Integrador1-Thomas-Marino\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Ejercicio-Integrador1-Thomas-Marino\\Entidades\\Entidades.csproj"
               }
             }
           }
@@ -66,14 +66,14 @@
         }
       }
     },
-    "C:\\Users\\Usuario\\Desktop\\Facultad\\Programación_II\\Proyectos\\Entidades\\Entidades.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\Ejercicio-Integrador1-Thomas-Marino\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Facultad\\Programación_II\\Proyectos\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Ejercicio-Integrador1-Thomas-Marino\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\Facultad\\Programación_II\\Proyectos\\Entidades\\Entidades.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\Ejercicio-Integrador1-Thomas-Marino\\Entidades\\Entidades.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\Facultad\\Programación_II\\Proyectos\\Entidades\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\Ejercicio-Integrador1-Thomas-Marino\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",

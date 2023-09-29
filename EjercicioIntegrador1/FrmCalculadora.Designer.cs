@@ -47,6 +47,7 @@
             // 
             // BtnOperar
             // 
+            BtnOperar.Cursor = Cursors.Hand;
             BtnOperar.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             BtnOperar.Location = new Point(12, 384);
             BtnOperar.Name = "BtnOperar";
@@ -58,6 +59,7 @@
             // 
             // BtnLimpiar
             // 
+            BtnLimpiar.Cursor = Cursors.Hand;
             BtnLimpiar.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             BtnLimpiar.Location = new Point(282, 384);
             BtnLimpiar.Name = "BtnLimpiar";
@@ -69,6 +71,7 @@
             // 
             // BtnCerrar
             // 
+            BtnCerrar.Cursor = Cursors.Hand;
             BtnCerrar.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             BtnCerrar.Location = new Point(546, 384);
             BtnCerrar.Name = "BtnCerrar";
@@ -92,7 +95,7 @@
             CbSeleccionOperador.DropDownStyle = ComboBoxStyle.DropDownList;
             CbSeleccionOperador.Font = new Font("Segoe UI", 19F, FontStyle.Regular, GraphicsUnit.Point);
             CbSeleccionOperador.FormattingEnabled = true;
-            CbSeleccionOperador.Items.AddRange(new object[] { "", "+", "-", "/", "*" });
+            CbSeleccionOperador.Items.AddRange(new object[] { "+", "-", "/", "*" });
             CbSeleccionOperador.Location = new Point(320, 303);
             CbSeleccionOperador.Name = "CbSeleccionOperador";
             CbSeleccionOperador.Size = new Size(170, 43);

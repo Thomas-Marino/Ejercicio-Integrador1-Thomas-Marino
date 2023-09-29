@@ -1,5 +1,6 @@
 using Entidades;
 using System.Drawing.Text;
+using System.Text;
 
 namespace EjercicioIntegrador1
 {
@@ -9,7 +10,7 @@ namespace EjercicioIntegrador1
         private Numeracion segundoOperando;
         private Numeracion resultado;
         private Operacion calculadora;
-        private ESistema sistema;
+        private Numeracion.ESistema sistema;
 
         public FrmCalculadora()
         {
@@ -37,6 +38,10 @@ namespace EjercicioIntegrador1
             TxbOperando2.ResetText();
             TxbResultado.ResetText();
             CbSeleccionOperador.ResetText();
+            CbSeleccionOperador.Enabled = true;
+            TxbOperando1.Enabled = true;
+            TxbOperando2.Enabled = true;
+            BtnOperar.Enabled = true;
         }
         // ---------------- Boton de operar.
         private void BtnOperar_Click(object sender, EventArgs e)
@@ -49,38 +54,56 @@ namespace EjercicioIntegrador1
             {
                 TxbOperando2.Text = "0";
             }
-            this.primerOperando = new Numeracion(TxbOperando1.Text, this.sistema);
-            this.segundoOperando = new Numeracion(TxbOperando2.Text, this.sistema);
-            this.calculadora = new Operacion(this.primerOperando, this.segundoOperando);
             setResultado();
-            resultado.Valor = resultado.ConvertirA(this.sistema);
-            TxbResultado.Text = resultado.Valor;
+            CbSeleccionOperador.Enabled = false;
+            TxbOperando1.Enabled = false;
+            TxbOperando2.Enabled = false;
+            BtnOperar.Enabled = false;
         }
         // ---------------- Radio Button Decimal.
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            this.sistema = ESistema.Decimal;
+            if (radioButton1.Checked) // de binario paso a decimal.
+            {
+                if (TxbResultado.Text != "")
+                {
+                    resultado = calculadora.Operar(char.Parse(CbSeleccionOperador.Text));
+                    TxbResultado.Text = resultado.Valor;
+                }
+            }
+            else
+            {
+                if (TxbResultado.Text != "")
+                {
+                    resultado.Valor = resultado.ConvertirA(Numeracion.ESistema.Binario);
+                    TxbResultado.Text = resultado.Valor;
+                }
+            }
         }
         // ---------------- Radio Button Binario.
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            this.sistema = ESistema.Binario;
+
         }
         /// <summary>
         /// Método encargado de inicializar el objeto resultado de tipo Numeracion y settear la operacion matematica entre el primer operando y el segundo operando dependiendo del operador seleccionado.
         /// </summary>
         private void setResultado()
         {
-            this.resultado = new Numeracion(0.0, this.sistema);
-            if (CbSeleccionOperador.Text != "")
+            this.primerOperando = new Numeracion(TxbOperando1.Text, Numeracion.ESistema.Decimal);
+            this.segundoOperando = new Numeracion(TxbOperando2.Text, Numeracion.ESistema.Decimal);
+            this.calculadora = new Operacion(this.primerOperando, this.segundoOperando);
+            this.resultado = new Numeracion("0.0", Numeracion.ESistema.Decimal);
+            if (CbSeleccionOperador.SelectedItem is null)
             {
-                //resultado.Valor = $"{calculadora.Operar(char.Parse(CbSeleccionOperador.Text))}";
-                resultado = calculadora.Operar(char.Parse(CbSeleccionOperador.Text));
+                CbSeleccionOperador.SelectedIndex = 0;
             }
-            else
+            resultado = calculadora.Operar(char.Parse(CbSeleccionOperador.Text));
+            if (radioButton2.Checked)
             {
-                resultado = calculadora.Operar(' ');
+                resultado.Valor = resultado.ConvertirA(Numeracion.ESistema.Binario);
             }
+            TxbResultado.Text = resultado.Valor;
         }
         private void FrmCalculadora_Load(object sender, EventArgs e)
         {
